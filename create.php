@@ -2,7 +2,7 @@
 <html>
 <head>
    <title>Big Library  |  Add Media</title>
-
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
    <style type= "text/css">
        fieldset {
            margin: auto;
@@ -17,6 +17,23 @@
 
 </head>
 <body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="index.php">The Big Library</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="create.php">Add Media</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
 
 <fieldset>
    <legend>Add Media</legend>
@@ -52,8 +69,8 @@
                <td><input type="text"  name="publisher_size" placeholder ="Publisher size" /></td>
            </tr>
            <tr>
-               <td><button type ="submit">Insert Media</button></td>
-               <td><a href= "index.php"><button  type="button">Back</button></a></td>
+               <td><button type ="submit" class="btn btn-outline-secondary">Insert Media</button></td>
+               <td><a href= "index.php"><button type="button" class="btn btn-outline-secondary">Back</button></a></td>
            </tr >
        </table>
    </form>
